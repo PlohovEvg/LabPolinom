@@ -15,7 +15,7 @@ class List
 	Link *head;
 public:
 	List() { head = NULL; }
-	void Add_new_Link(double _coeff, int degrees);
+	void Add_new_Link(double _coeff, int _degrees);
 	List operator +(const List &l1);
 	List operator *(const List &l1);
 	List& operator =(const List &l1);

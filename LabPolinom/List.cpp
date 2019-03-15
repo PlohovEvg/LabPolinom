@@ -1,11 +1,11 @@
 #include "List.h"
 
 
-void List::Add_new_Link(double _coeff, int degrees)
+void List::Add_new_Link(double _coeff, int _degrees)
 {
-	Link *n = new Link;
+	Link *n = new Link;                 //сделать упорядоченную вставку
 	n->coeff = _coeff;
-	n->degrees = degrees;
+	n->degrees = _degrees;
 	n->next = NULL;
 	if (head == NULL)
 	{
@@ -24,12 +24,13 @@ void List::Add_new_Link(double _coeff, int degrees)
 
 List List::operator+(const List &l1)
 {
-	List res;
+	List res;                               //слияние полиномов
 	Link *p = head;
 	Link *t = l1.head;
 
 	while (t != NULL)
 	{
+		p = head;
 		while (p != NULL)
 		{
 			if (p->degrees == t->degrees)
@@ -46,6 +47,7 @@ List List::operator+(const List &l1)
 				}
 			}
 		}
+		
 		t = t->next;
 	}
 
@@ -60,6 +62,7 @@ List List::operator*(const List &l1)
 
 	while(t != NULL)
 	{
+		p = head;
 		while (p != NULL)
 		{
 			/*if (p->degrees + t->degrees <= 7999);
@@ -162,6 +165,7 @@ List& List:: operator=(const List &l1)
 			for (k = j; k < i; k++)
 			{
 				Add_new_Link(t->coeff, t->degrees);
+				t = t->next;
 			}
 		}
 		else
