@@ -18,13 +18,13 @@ int main()
 	cin >> Polinom2;
 
 	Partition(Polinom1, l1);
-	Partition(Polinom2, l2);
+	Partition(Polinom2, l2);	
 		
 	l3 = l1 + l2;
-	l4 = l1 * l2;
+	//l4 = l1 * l2;
 
 	l3.show();
-	l4.show();
+	//l4.show();
 
 	return 0;
 }

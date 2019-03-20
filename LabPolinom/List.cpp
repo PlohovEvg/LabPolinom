@@ -3,7 +3,7 @@
 
 void List::Add_new_Link(double _coeff, int _degrees)
 {
-	Link *n = new Link;                 //сделать упорядоченную вставку
+	Link *n = new Link;                 
 	n->coeff = _coeff;
 	n->degrees = _degrees;
 	n->next = NULL;
@@ -12,25 +12,57 @@ void List::Add_new_Link(double _coeff, int _degrees)
 		head = n;
 	}
 	else
-	{
-		Link *p = head;
-		while (p->next != NULL)
-		{
-			p = p->next;
-		}
-		p->next = n;
+	{		
+			if (n->degrees < head->degrees)
+			{
+				n->next = head;
+				head = n;
+			}
+			else
+			{
+				if (n->degrees == head->degrees)
+				{
+					head->coeff += n->coeff;
+				}
+				else
+				{
+					Link *p = head;
+					while (p->next != NULL)
+					{
+						if (n->degrees < p->next->degrees)
+						{
+							n->next = p->next;
+							p->next = n;
+							break;
+						}
+						else
+						{
+							if (n->degrees == p->next->degrees)
+							{
+								p->next->coeff += n->coeff;
+								break;
+							}
+							p = p->next;
+						}
+					}
+					if (p->next == NULL)
+					{
+						p->next = n;
+					}
+				}
+			}		
 	}
 }
 
 List List::operator+(const List &l1)
 {
-	List res;                               //слияние полиномов
+	List res;                               
 	Link *p = head;
 	Link *t = l1.head;
 
-	while (t != NULL)
+	while ((t != NULL) || (p != NULL))
 	{
-		p = head;
+		/*p = head;
 		while (p != NULL)
 		{
 			if (p->degrees == t->degrees)
@@ -46,11 +78,36 @@ List List::operator+(const List &l1)
 					res.Add_new_Link(t->coeff, t->degrees);
 				}
 			}
+		}*/
+		if (p->degrees == t->degrees)
+		{
+			res.Add_new_Link(p->coeff + t->coeff, p->degrees);			
 		}
-		
+		else
+		{
+			res.Add_new_Link(p->coeff, p->degrees);
+			res.Add_new_Link(t->coeff, t->degrees);
+		}
 		t = t->next;
+		p = p->next;
 	}
-
+	if (p != NULL)
+	{
+		while (p != NULL)
+		{
+			res.Add_new_Link(p->coeff, p->degrees);
+			p = p->next;
+		}
+	}
+	
+	if (t != NULL)
+	{
+		while (t != NULL)
+		{
+			res.Add_new_Link(t->coeff, t->degrees);
+			t = t->next;
+		}
+	}	
 	return res;
 }
 
