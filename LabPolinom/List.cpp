@@ -61,24 +61,7 @@ List List::operator+(const List &l1)
 	Link *t = l1.head;
 
 	while ((t != NULL) || (p != NULL))
-	{
-		/*p = head;
-		while (p != NULL)
-		{
-			if (p->degrees == t->degrees)
-			{
-				res.Add_new_Link(p->coeff + t->coeff, p->degrees);
-				break;
-			}
-			else
-			{
-				p = p->next;
-				if (p == NULL)
-				{
-					res.Add_new_Link(t->coeff, t->degrees);
-				}
-			}
-		}*/
+	{		
 		if (p->degrees == t->degrees)
 		{
 			res.Add_new_Link(p->coeff + t->coeff, p->degrees);			
