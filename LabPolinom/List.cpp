@@ -60,7 +60,7 @@ List List::operator+(const List &l1)
 	Link *p = head;
 	Link *t = l1.head;
 
-	while ((t != NULL) || (p != NULL))
+	while ((t != NULL) && (p != NULL))
 	{		
 		if (p->degrees == t->degrees)
 		{
@@ -121,7 +121,7 @@ void List::show()
 {
 	Link *p = head;
 	int xd, yd, zd;
-	cout << endl;
+	//cout << endl;
 	while (p != NULL)
 	{
 		xd = p->degrees / 400;

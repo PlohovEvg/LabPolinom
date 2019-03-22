@@ -5,7 +5,7 @@
 #include "Functions.h"
 #include "List.h"
 
-using namespace std;
+using namespace std;                             //Добавить тесты
 
 int main()
 {
@@ -21,10 +21,11 @@ int main()
 	Partition(Polinom2, l2);	
 		
 	l3 = l1 + l2;
-	//l4 = l1 * l2;
-
+	l4 = l1 * l2;
+	cout << endl << "p1 + p2 = ";
 	l3.show();
-	//l4.show();
+	cout << "p1 * p2 = ";
+	l4.show();
 
 	return 0;
 }
