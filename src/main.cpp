@@ -5,7 +5,7 @@
 #include "Functions.h"
 #include "List.h"
 
-using namespace std;                             
+using namespace std;                             //Добавить тесты
 
 int main()
 {

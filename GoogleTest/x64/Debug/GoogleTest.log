@@ -1,0 +1,5 @@
+﻿  test_polinom.cpp
+c:\users\пользователь\documents\git\labpolinom\googletest\test_polinom.cpp(1): fatal error C1083: Не удается открыть файл включение: List.h: No such file or directory
+  test_main.cpp
+c:\users\пользователь\documents\git\labpolinom\googletest\test_main.cpp(1): fatal error C1083: Не удается открыть файл включение: gtest.h: No such file or directory
+  Создание кода...
