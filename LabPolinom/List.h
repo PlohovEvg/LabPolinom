@@ -21,4 +21,5 @@ public:
 	List& operator =(const List &l1);
 	void Delete_last_Link();
 	void show();
+	string ConvertToString();
 };

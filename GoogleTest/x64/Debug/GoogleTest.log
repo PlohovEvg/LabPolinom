@@ -1,5 +1,66 @@
 ﻿  test_polinom.cpp
-c:\users\пользователь\documents\git\labpolinom\googletest\test_polinom.cpp(1): fatal error C1083: Не удается открыть файл включение: List.h: No such file or directory
-  test_main.cpp
-c:\users\пользователь\documents\git\labpolinom\googletest\test_main.cpp(1): fatal error C1083: Не удается открыть файл включение: gtest.h: No such file or directory
-  Создание кода...
+c:\users\plohov.e\documents\git\labpolinom\labpolinom\functions.cpp(60): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+c:\users\plohov.e\documents\git\labpolinom\googletest\test_polinom.cpp(20): error C2665: testing::internal::IsNullLiteralHelper: ни одна из 2 перегрузок не может преобразовать все типы аргументов
+  c:\users\plohov.e\documents\git\labpolinom\gteast\gtest.h(7084): note: может быть "char (&testing::internal::IsNullLiteralHelper(...))[2]"
+  c:\users\plohov.e\documents\git\labpolinom\gteast\gtest.h(7083): note: или       "char testing::internal::IsNullLiteralHelper(testing::internal::Secret *)"
+  c:\users\plohov.e\documents\git\labpolinom\googletest\test_polinom.cpp(20): note: при попытке сопоставить список аргументов "(void)"
+c:\users\plohov.e\documents\git\labpolinom\googletest\test_polinom.cpp(20): error C2664: "testing::AssertionResult testing::internal::EqHelper<false>::Compare(const char *,const char *,testing::internal::BiggestInt,testing::internal::BiggestInt)": невозможно преобразовать аргумент 3 из "void" в "testing::internal::BiggestInt"
+  c:\users\plohov.e\documents\git\labpolinom\googletest\test_polinom.cpp(20): note: Выражение, имеющее тип void, нельзя преобразовать в другой тип
+c:\users\plohov.e\documents\git\labpolinom\googletest\test_polinom.cpp(20): error C2512: testing::AssertionResult: нет подходящего конструктора по умолчанию
+  c:\users\plohov.e\documents\git\labpolinom\gteast\gtest.h(17671): note:  см. объявление "testing::AssertionResult"
+c:\users\plohov.e\documents\git\labpolinom\googletest\test_polinom.cpp(27): error C2665: testing::internal::IsNullLiteralHelper: ни одна из 2 перегрузок не может преобразовать все типы аргументов
+  c:\users\plohov.e\documents\git\labpolinom\gteast\gtest.h(7084): note: может быть "char (&testing::internal::IsNullLiteralHelper(...))[2]"
+  c:\users\plohov.e\documents\git\labpolinom\gteast\gtest.h(7083): note: или       "char testing::internal::IsNullLiteralHelper(testing::internal::Secret *)"
+  c:\users\plohov.e\documents\git\labpolinom\googletest\test_polinom.cpp(27): note: при попытке сопоставить список аргументов "(void)"
+c:\users\plohov.e\documents\git\labpolinom\googletest\test_polinom.cpp(27): error C2664: "testing::AssertionResult testing::internal::EqHelper<false>::Compare(const char *,const char *,testing::internal::BiggestInt,testing::internal::BiggestInt)": невозможно преобразовать аргумент 3 из "void" в "testing::internal::BiggestInt"
+  c:\users\plohov.e\documents\git\labpolinom\googletest\test_polinom.cpp(27): note: Выражение, имеющее тип void, нельзя преобразовать в другой тип
+c:\users\plohov.e\documents\git\labpolinom\googletest\test_polinom.cpp(27): error C2512: testing::AssertionResult: нет подходящего конструктора по умолчанию
+  c:\users\plohov.e\documents\git\labpolinom\gteast\gtest.h(17671): note:  см. объявление "testing::AssertionResult"
+c:\users\plohov.e\documents\git\labpolinom\googletest\test_polinom.cpp(34): error C2665: testing::internal::IsNullLiteralHelper: ни одна из 2 перегрузок не может преобразовать все типы аргументов
+  c:\users\plohov.e\documents\git\labpolinom\gteast\gtest.h(7084): note: может быть "char (&testing::internal::IsNullLiteralHelper(...))[2]"
+  c:\users\plohov.e\documents\git\labpolinom\gteast\gtest.h(7083): note: или       "char testing::internal::IsNullLiteralHelper(testing::internal::Secret *)"
+  c:\users\plohov.e\documents\git\labpolinom\googletest\test_polinom.cpp(34): note: при попытке сопоставить список аргументов "(void)"
+c:\users\plohov.e\documents\git\labpolinom\googletest\test_polinom.cpp(34): error C2664: "testing::AssertionResult testing::internal::EqHelper<false>::Compare(const char *,const char *,testing::internal::BiggestInt,testing::internal::BiggestInt)": невозможно преобразовать аргумент 3 из "void" в "testing::internal::BiggestInt"
+  c:\users\plohov.e\documents\git\labpolinom\googletest\test_polinom.cpp(34): note: Выражение, имеющее тип void, нельзя преобразовать в другой тип
+c:\users\plohov.e\documents\git\labpolinom\googletest\test_polinom.cpp(34): error C2512: testing::AssertionResult: нет подходящего конструктора по умолчанию
+  c:\users\plohov.e\documents\git\labpolinom\gteast\gtest.h(17671): note:  см. объявление "testing::AssertionResult"
+c:\users\plohov.e\documents\git\labpolinom\googletest\test_polinom.cpp(44): error C2665: testing::internal::IsNullLiteralHelper: ни одна из 2 перегрузок не может преобразовать все типы аргументов
+  c:\users\plohov.e\documents\git\labpolinom\gteast\gtest.h(7084): note: может быть "char (&testing::internal::IsNullLiteralHelper(...))[2]"
+  c:\users\plohov.e\documents\git\labpolinom\gteast\gtest.h(7083): note: или       "char testing::internal::IsNullLiteralHelper(testing::internal::Secret *)"
+  c:\users\plohov.e\documents\git\labpolinom\googletest\test_polinom.cpp(44): note: при попытке сопоставить список аргументов "(void)"
+c:\users\plohov.e\documents\git\labpolinom\googletest\test_polinom.cpp(44): error C2664: "testing::AssertionResult testing::internal::EqHelper<false>::Compare(const char *,const char *,testing::internal::BiggestInt,testing::internal::BiggestInt)": невозможно преобразовать аргумент 3 из "void" в "testing::internal::BiggestInt"
+  c:\users\plohov.e\documents\git\labpolinom\googletest\test_polinom.cpp(44): note: Выражение, имеющее тип void, нельзя преобразовать в другой тип
+c:\users\plohov.e\documents\git\labpolinom\googletest\test_polinom.cpp(44): error C2512: testing::AssertionResult: нет подходящего конструктора по умолчанию
+  c:\users\plohov.e\documents\git\labpolinom\gteast\gtest.h(17671): note:  см. объявление "testing::AssertionResult"
+c:\users\plohov.e\documents\git\labpolinom\googletest\test_polinom.cpp(54): error C2665: testing::internal::IsNullLiteralHelper: ни одна из 2 перегрузок не может преобразовать все типы аргументов
+  c:\users\plohov.e\documents\git\labpolinom\gteast\gtest.h(7084): note: может быть "char (&testing::internal::IsNullLiteralHelper(...))[2]"
+  c:\users\plohov.e\documents\git\labpolinom\gteast\gtest.h(7083): note: или       "char testing::internal::IsNullLiteralHelper(testing::internal::Secret *)"
+  c:\users\plohov.e\documents\git\labpolinom\googletest\test_polinom.cpp(54): note: при попытке сопоставить список аргументов "(void)"
+c:\users\plohov.e\documents\git\labpolinom\googletest\test_polinom.cpp(54): error C2664: "testing::AssertionResult testing::internal::EqHelper<false>::Compare(const char *,const char *,testing::internal::BiggestInt,testing::internal::BiggestInt)": невозможно преобразовать аргумент 3 из "void" в "testing::internal::BiggestInt"
+  c:\users\plohov.e\documents\git\labpolinom\googletest\test_polinom.cpp(54): note: Выражение, имеющее тип void, нельзя преобразовать в другой тип
+c:\users\plohov.e\documents\git\labpolinom\googletest\test_polinom.cpp(54): error C2512: testing::AssertionResult: нет подходящего конструктора по умолчанию
+  c:\users\plohov.e\documents\git\labpolinom\gteast\gtest.h(17671): note:  см. объявление "testing::AssertionResult"
+c:\users\plohov.e\documents\git\labpolinom\googletest\test_polinom.cpp(64): error C2665: testing::internal::IsNullLiteralHelper: ни одна из 2 перегрузок не может преобразовать все типы аргументов
+  c:\users\plohov.e\documents\git\labpolinom\gteast\gtest.h(7084): note: может быть "char (&testing::internal::IsNullLiteralHelper(...))[2]"
+  c:\users\plohov.e\documents\git\labpolinom\gteast\gtest.h(7083): note: или       "char testing::internal::IsNullLiteralHelper(testing::internal::Secret *)"
+  c:\users\plohov.e\documents\git\labpolinom\googletest\test_polinom.cpp(64): note: при попытке сопоставить список аргументов "(void)"
+c:\users\plohov.e\documents\git\labpolinom\googletest\test_polinom.cpp(64): error C2664: "testing::AssertionResult testing::internal::EqHelper<false>::Compare(const char *,const char *,testing::internal::BiggestInt,testing::internal::BiggestInt)": невозможно преобразовать аргумент 3 из "void" в "testing::internal::BiggestInt"
+  c:\users\plohov.e\documents\git\labpolinom\googletest\test_polinom.cpp(64): note: Выражение, имеющее тип void, нельзя преобразовать в другой тип
+c:\users\plohov.e\documents\git\labpolinom\googletest\test_polinom.cpp(64): error C2512: testing::AssertionResult: нет подходящего конструктора по умолчанию
+  c:\users\plohov.e\documents\git\labpolinom\gteast\gtest.h(17671): note:  см. объявление "testing::AssertionResult"
+c:\users\plohov.e\documents\git\labpolinom\googletest\test_polinom.cpp(74): error C2665: testing::internal::IsNullLiteralHelper: ни одна из 2 перегрузок не может преобразовать все типы аргументов
+  c:\users\plohov.e\documents\git\labpolinom\gteast\gtest.h(7084): note: может быть "char (&testing::internal::IsNullLiteralHelper(...))[2]"
+  c:\users\plohov.e\documents\git\labpolinom\gteast\gtest.h(7083): note: или       "char testing::internal::IsNullLiteralHelper(testing::internal::Secret *)"
+  c:\users\plohov.e\documents\git\labpolinom\googletest\test_polinom.cpp(74): note: при попытке сопоставить список аргументов "(void)"
+c:\users\plohov.e\documents\git\labpolinom\googletest\test_polinom.cpp(74): error C2664: "testing::AssertionResult testing::internal::EqHelper<false>::Compare(const char *,const char *,testing::internal::BiggestInt,testing::internal::BiggestInt)": невозможно преобразовать аргумент 3 из "void" в "testing::internal::BiggestInt"
+  c:\users\plohov.e\documents\git\labpolinom\googletest\test_polinom.cpp(74): note: Выражение, имеющее тип void, нельзя преобразовать в другой тип
+c:\users\plohov.e\documents\git\labpolinom\googletest\test_polinom.cpp(74): error C2512: testing::AssertionResult: нет подходящего конструктора по умолчанию
+  c:\users\plohov.e\documents\git\labpolinom\gteast\gtest.h(17671): note:  см. объявление "testing::AssertionResult"
+c:\users\plohov.e\documents\git\labpolinom\googletest\test_polinom.cpp(84): error C2665: testing::internal::IsNullLiteralHelper: ни одна из 2 перегрузок не может преобразовать все типы аргументов
+  c:\users\plohov.e\documents\git\labpolinom\gteast\gtest.h(7084): note: может быть "char (&testing::internal::IsNullLiteralHelper(...))[2]"
+  c:\users\plohov.e\documents\git\labpolinom\gteast\gtest.h(7083): note: или       "char testing::internal::IsNullLiteralHelper(testing::internal::Secret *)"
+  c:\users\plohov.e\documents\git\labpolinom\googletest\test_polinom.cpp(84): note: при попытке сопоставить список аргументов "(void)"
+c:\users\plohov.e\documents\git\labpolinom\googletest\test_polinom.cpp(84): error C2664: "testing::AssertionResult testing::internal::EqHelper<false>::Compare(const char *,const char *,testing::internal::BiggestInt,testing::internal::BiggestInt)": невозможно преобразовать аргумент 3 из "void" в "testing::internal::BiggestInt"
+  c:\users\plohov.e\documents\git\labpolinom\googletest\test_polinom.cpp(84): note: Выражение, имеющее тип void, нельзя преобразовать в другой тип
+c:\users\plohov.e\documents\git\labpolinom\googletest\test_polinom.cpp(84): error C2512: testing::AssertionResult: нет подходящего конструктора по умолчанию
+  c:\users\plohov.e\documents\git\labpolinom\gteast\gtest.h(17671): note:  см. объявление "testing::AssertionResult"
