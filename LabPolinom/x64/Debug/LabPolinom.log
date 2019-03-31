@@ -1,0 +1,7 @@
+﻿  main.cpp
+  List.cpp
+  Functions.cpp
+c:\users\пользователь\documents\git\labpolinom\labpolinom\functions.cpp(60): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+  Создание кода...
+  LabPolinom.vcxproj -> C:\Users\Пользователь\Documents\Git\LabPolinom\x64\Debug\LabPolinom.exe
+  LabPolinom.vcxproj -> C:\Users\Пользователь\Documents\Git\LabPolinom\x64\Debug\LabPolinom.pdb (Full PDB)

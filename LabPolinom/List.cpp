@@ -1,4 +1,5 @@
 #include "List.h"
+#include <string>
 
 
 void List::Add_new_Link(double _coeff, int _degrees)
@@ -118,33 +119,8 @@ List List::operator*(const List &l1)
 }
 
 void List::show()
-{
-	Link *p = head;
-	int xd, yd, zd;
-	//cout << endl;
-	while (p != NULL)
-	{
-		xd = p->degrees / 400;
-		yd = (p->degrees % 400) / 20;
-		zd = (p->degrees % 400) % 20;
-		if (p->coeff > 0)
-		{
-			if (p != head)
-			{
-				cout << "+" << p->coeff << "x^" << xd << "y^" << yd << "z^" << zd;
-			}
-			else
-			{
-				cout << p->coeff << "x^" << xd << "y^" << yd << "z^" << zd;
-			}
-		}
-		else
-		{
-			cout << p->coeff << "x^" << xd << "y^" << yd << "z^" << zd;
-		}
-		p = p->next;
-	}
-	cout << endl << endl;
+{	
+	cout << ConvertToString() << endl << endl;
 }
 
 void List::Delete_last_Link()
@@ -224,4 +200,98 @@ List& List:: operator=(const List &l1)
 		}
 	}
 	return *this;
+}
+string List::ConvertToString()
+{
+	string s = "";
+	char sc[20];
+	string sx = "", sy = "", sz = "";
+	Link *p = head;
+	int xd, yd, zd;
+	while (p != NULL)
+	{
+		xd = p->degrees / 400;
+		yd = (p->degrees % 400) / 20;
+		zd = (p->degrees % 400) % 20;
+		if ((p == head) && (xd == yd == zd == 0) && (p->coeff == 0))
+		{
+			s += '0';
+			break;
+		}
+		if (p->coeff > 0)
+		{
+			if (p != head)
+			{
+				s += '+';
+				sprintf_s(sc, "%.2lf", p->coeff);
+				s += sc;
+				if (xd != 0)
+				{
+					s += "x^";
+					sx = to_string(xd);
+					s += sx;
+				}
+				if (yd != 0)
+				{
+					s += "y^";
+					sy = to_string(yd);
+					s += sy;
+				}
+				if (zd != 0)
+				{
+					s += "z^";
+					sz = to_string(zd);
+					s += sz;
+				}
+			}
+			else
+			{
+				sprintf_s(sc, "%.2lf", p->coeff);
+				s += sc;
+				if (xd != 0)
+				{
+					s += "x^";
+					sx = to_string(xd);
+					s += sx;
+				}
+				if (yd != 0)
+				{
+					s += "y^";
+					sy = to_string(yd);
+					s += sy;
+				}
+				if (zd != 0)
+				{
+					s += "z^";
+					sz = to_string(zd);
+					s += sz;
+				}
+			}
+		}
+		else
+		{
+			sprintf_s(sc, "%.2lf", p->coeff);
+			s += sc;
+			if (xd != 0)
+			{
+				s += "x^";
+				sx = to_string(xd);
+				s += sx;
+			}
+			if (yd != 0)
+			{
+				s += "y^";
+				sy = to_string(yd);
+				s += sy;
+			}
+			if (zd != 0)
+			{
+				s += "z^";
+				sz = to_string(zd);
+				s += sz;
+			}
+		}
+		p = p->next;
+	}
+	return s;
 }

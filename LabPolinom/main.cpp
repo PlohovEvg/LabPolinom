@@ -19,7 +19,7 @@ int main()
 
 	Partition(Polinom1, l1);
 	Partition(Polinom2, l2);	
-		
+	l1.show();
 	l3 = l1 + l2;
 	l4 = l1 * l2;
 	cout << endl << "p1 + p2 = ";
