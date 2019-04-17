@@ -79,7 +79,6 @@ TEST(List, can_add_lists_with_different_length)
 	Partition(p1, l1);
 	Partition(p2, l2);
 	l3 = l1 + l2;
-	cout << l3.ConvertToString();
 	List l4;
 	Partition(string("6.84z^10-2y^7+6x^1y^2z^3+2x^7z^8"), l4);
 	EXPECT_EQ(l3.ConvertToString(), l4.ConvertToString());

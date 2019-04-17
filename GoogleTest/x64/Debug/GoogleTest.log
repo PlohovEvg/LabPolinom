@@ -1,10 +1,4 @@
 ﻿  test_polinom.cpp
 c:\users\пользователь\documents\git\labpolinom\labpolinom\functions.cpp(60): warning C4244: =: преобразование "double" в "int", возможна потеря данных
-  test_main.cpp
-  Создание кода...
-test_polinom.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: void __cdecl List::Add_new_Link(double,int)" (?Add_new_Link@List@@QEAAXNH@Z) в функции "void __cdecl Partition(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class List &)" (?Partition@@YAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAVList@@@Z)
-test_polinom.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: class List __cdecl List::operator+(class List const &)" (??HList@@QEAA?AV0@AEBV0@@Z) в функции "private: virtual void __cdecl List_can_add_lists_with_different_length_Test::TestBody(void)" (?TestBody@List_can_add_lists_with_different_length_Test@@EEAAXXZ)
-test_polinom.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: class List __cdecl List::operator*(class List const &)" (??DList@@QEAA?AV0@AEBV0@@Z) в функции "private: virtual void __cdecl List_can_multiply_lists_Test::TestBody(void)" (?TestBody@List_can_multiply_lists_Test@@EEAAXXZ)
-test_polinom.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: class List & __cdecl List::operator=(class List const &)" (??4List@@QEAAAEAV0@AEBV0@@Z) в функции "private: virtual void __cdecl List_can_add_lists_with_different_length_Test::TestBody(void)" (?TestBody@List_can_add_lists_with_different_length_Test@@EEAAXXZ)
-test_polinom.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl List::ConvertToString(void)" (?ConvertToString@List@@QEAA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ) в функции "private: virtual void __cdecl List_can_add_lists_with_different_length_Test::TestBody(void)" (?TestBody@List_can_add_lists_with_different_length_Test@@EEAAXXZ)
-C:\Users\Пользователь\Documents\Git\LabPolinom\x64\Debug\GoogleTest.exe : fatal error LNK1120: неразрешенных внешних элементов: 5
+  GoogleTest.vcxproj -> C:\Users\Пользователь\Documents\Git\LabPolinom\x64\Debug\GoogleTest.exe
+  GoogleTest.vcxproj -> C:\Users\Пользователь\Documents\Git\LabPolinom\x64\Debug\GoogleTest.pdb (Full PDB)
